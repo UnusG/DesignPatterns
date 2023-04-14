@@ -9,4 +9,4 @@
 # Ignore file
 /*.xml
 /*.iml
-.//out
+../out/
