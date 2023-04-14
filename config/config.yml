@@ -1,0 +1,18 @@
+# my global config
+global:
+  scrape_interval:     15s
+  evaluation_interval: 30s
+  # scrape_timeout is set to the global default (10s).
+  external_labels:
+    monitor: codelab
+    foo:     bar
+rule_files:
+  - "first.rules"
+  - "my/*.rules"
+remote_write:
+  - url: http://remote1/push
+    write_relabel_configs:
+      - source_labels: [__name__]
+        regex:         expensive.*
+        action:        drop
+  - url: http://remote2/push
