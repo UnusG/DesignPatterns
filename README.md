@@ -182,7 +182,7 @@ Parse xml config content:
 ```
 
 ## UML
-[embed]https://github.com/UnusG/DesignPatterns/blob/main/exported_from_idea.drawio.pdf
+[embed]https://github.com/UnusG/DesignPatterns/blob/main/exported_from_idea.drawio.pdf[/embed]
 ## Credits
 * Head First Design Patterns: A Brain-Friendly Guide
 * Dive into Design Patterns
