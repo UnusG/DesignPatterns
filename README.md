@@ -182,7 +182,7 @@ Parse xml config content:
 ```
 
 ## UML
-![diagram]exported_from_idea.jpg
+![diagram](exported_from_idea.jpg)
 ## Credits
 * Head First Design Patterns: A Brain-Friendly Guide
 * Dive into Design Patterns
