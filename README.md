@@ -3,7 +3,9 @@
 
 ## What is Factory Pattern and how does it work?
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. It gives us a way to encapsulate the instantiations of concrete types. This decouples the client code in the superclass from the object creation code in the subclass.
+
 `abstract Product factoryMethod(String type)`
+
 Factory Method is not the only technique for adhering to the Dependency Inversion Principle, but it is one of the more powerful ones. The Factory Pattern makes sure that our high-level components do not depend on our low-level components; rather, they both depend on abstractions.
 
 ![Factory Method](factoryPatternDescription.jpg)
