@@ -1,21 +1,23 @@
-# DesignPatterns
-**Factory Pattern**
+# **Factory Pattern**
 
-## What is Factory Pattern and how does it work?
+
+### What is Factory Pattern and how does it work?
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses. It gives us a way to encapsulate the instantiations of concrete types. This decouples the client code in the superclass from the object creation code in the subclass.
 
 `abstract Product factoryMethod(String type)`
 
 Factory Method is not the only technique for adhering to the Dependency Inversion Principle, but it is one of the more powerful ones. The Factory Pattern makes sure that our high-level components do not depend on our low-level components; rather, they both depend on abstractions.
+Here's a clear UML extracted from the book Head First Design Patterns that illustrates how Factory Pattern works:
 
 ![Factory Method](factoryPatternDescription.jpg)
 
-## What is Abstract Factory and how does it work?
+### What is Abstract Factory and how does it work?
 An Abstract Factory gives us an interface for creating a family of products. By writing code that uses this interface, we decouple our code from the actual factory that creates the products. That allows us to implement a variety of factories that produce products meant for different contexts - such as different regions, different operating systems, or different look and feels. Because our code is decoupled from the actual products, we can substitute different factories to get different behaviors.
+Here's a clear UML extracted from the book Head First Design Patterns that illustrates how Abstract Factory works:
 
 ![Abstract Factory](abstractFactory.jpg)
 
-## When to use Factory Pattern and Abstract Factory?
+### When to use Factory Pattern and Abstract Factory?
 Use Factory Pattern when:
 - We need to decouple the client code from the concrete classes we need to instantiate;
 - If we don't know ahead of time all the concrete classes we are going to need;
@@ -23,7 +25,7 @@ Use Factory Pattern when:
 
 Use Abstract Factory whenever there families of products we need to create and we want to make sure our clients create products that belong together.
 
-## How the code works?
+### How the code works?
 
 This code implements the Factory Method design pattern to parse configuration files in different formats.
 
@@ -39,7 +41,7 @@ The Client class has a main method that reads the content of the configuration f
 
 *Note that this is pseudocode, and some functions of the code may just use the printout to assume complete the logic of the code.*
 
-## How to run the code?(Programmatic Example)
+### How to run the code?(Programmatic Example)
 ``` Java
 /**
    * Reads the content of the configuration files from the file system and parses them using the
@@ -111,7 +113,7 @@ The Client class has a main method that reads the content of the configuration f
 ```
 > The getFileExtension method is a private utility method that extracts the file extension from a file name. It takes a String parameter filename which is the name of the file. This method is not directly related to the factory method pattern. However, it is used in the determineFactory method to determine the appropriate parser factory based on the file extension of the configuration file.
 
-## Program output:
+### Program output:
 ```
 Parse properties config content:
 # ===============================
@@ -181,8 +183,8 @@ Parse xml config content:
 </project>
 ```
 
-## UML
+### UML of the code example
 ![diagram](exported_from_idea.jpg)
-## Credits
+### Credits
 * Head First Design Patterns: A Brain-Friendly Guide
 * Dive into Design Patterns
