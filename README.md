@@ -180,6 +180,7 @@ Parse xml config content:
   </component>
 </project>
 ```
+[exported_from_idea.drawio.pdf](https://github.com/UnusG/DesignPatterns/files/11238082/exported_from_idea.drawio.pdf)
 
 ## UML
 
