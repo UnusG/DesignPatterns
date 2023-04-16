@@ -184,6 +184,7 @@ Parse xml config content:
 ```
 
 ### UML of the code example
+
 ![diagram](designpatternuml.jpg)
 ### Credits
 * Head First Design Patterns: A Brain-Friendly Guide
